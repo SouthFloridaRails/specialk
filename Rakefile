@@ -13,15 +13,13 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "specialk"
-  gem.homepage = "http://github.com/mzaragoza/specialk"
+  gem.homepage = "http://github.com/southfloridarails/specialk"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Specialize Yo Konsole}
+  gem.description = %Q{Make me fabulous}
   gem.email = "mZaragoza@circletechfl.com"
-  gem.authors = ["Moises Zaragoza"]
-  # dependencies defined in Gemfile
+  gem.authors = ["Moises Zaragoza", "Paul Kruger","Aldo Delgado"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -29,11 +27,6 @@ require 'rspec/core'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
-end
-
-RSpec::Core::RakeTask.new(:rcov) do |spec|
-  spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
 end
 
 task :default => :spec

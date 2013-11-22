@@ -1,0 +1,10 @@
+#AwesomePrint
+def ap_raw_enable
+  AwesomePrint.defaults = {:raw => true}
+end
+
+def ap_raw_disable
+  AwesomePrint.defaults = {:raw => true}
+end
+
+ap_raw_enable
